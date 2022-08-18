@@ -2,7 +2,7 @@ name: integracion continua con angular
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   ci_to_master:

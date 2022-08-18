@@ -118,5 +118,8 @@
       }
     }
   },
-  "defaultProject": "pin"
+  "defaultProject": "pin",
+  "cli": {
+    "analytics": "a6e70f38-3958-45a3-8dc2-3442b9f9cfac"
+  }
 }

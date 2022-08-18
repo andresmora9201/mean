@@ -1,0 +1,17 @@
+name: integracion continua con angular
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  ci_to_master:
+    runs-on: ubuntu-lastest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm run test:server:coverage
+      - run: npm run build

@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const PinsRouter = require("./routes/pins");
 const Pins = require("./models/Pins");
-const request = require("request"); // nos va permitir hacer peticiones http en nuestro servidor simulado
+const request = require("request"); // nos va permitir hacer peticiones http en nuestro servidor
 const http = require("http");
 const app = express(); // creamos una nueva instacia de express para simular nuestro servidor
 
